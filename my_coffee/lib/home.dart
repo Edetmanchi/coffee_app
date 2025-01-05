@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:my_coffee/column.dart';
 class Home extends StatelessWidget {
   const Home({super.key});
 
@@ -17,11 +17,15 @@ class Home extends StatelessWidget {
         // height: 60,
         padding: const EdgeInsets.all(20),
         margin: const EdgeInsets.fromLTRB(70, 20, 0, 10),
+        // child: const Text('this is the body', style: TextStyle(
+        //   fontSize: 20,
+        //   fontFamily: 'san-sarif',
+        // ));
         child: const Text('this is the body', style: TextStyle(
-          fontSize: 20,
-          fontFamily: 'san-sarif',
-        ));
-      )
+          fontFamily: 'italic',
+          fontSize: 20
+        ),),
+      ),
       
     );
   }
