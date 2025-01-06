@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_coffee/column.dart';
+import 'package:my_coffee/myColumn.dart';
 class Home extends StatelessWidget {
   const Home({super.key});
 
@@ -30,3 +30,4 @@ class Home extends StatelessWidget {
     );
   }
 }
+
