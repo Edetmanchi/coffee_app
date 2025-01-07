@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_coffee/myColumn.dart';
+import 'package:my_coffee/coffeePrefs.dart';
+// import 'package:my_coffee/myColumn.dart';
 class Home extends StatelessWidget {
   const Home({super.key});
 
@@ -11,21 +12,19 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.brown,
         centerTitle: true,
       ),
-      body:   Container(
-        color: Colors.blue[400],
-        // width: 150,
-        // height: 60,
-        padding: const EdgeInsets.all(20),
-        margin: const EdgeInsets.fromLTRB(70, 20, 0, 10),
-        // child: const Text('this is the body', style: TextStyle(
-        //   fontSize: 20,
-        //   fontFamily: 'san-sarif',
-        // ));
-        child: const Text('this is the body', style: TextStyle(
-          fontFamily: 'italic',
-          fontSize: 20
-        ),),
-      ),
+      body: Column(
+        children: [
+          Container(
+            color: Colors.grey[500],
+            child:const  Text('How i like my coffee') 
+          ),
+          Container(
+            color: Colors.grey[300],
+            child: const CoffeePrefs(),
+          )
+         
+        ],
+      )
       
     );
   }

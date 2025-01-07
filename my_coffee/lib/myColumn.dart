@@ -18,7 +18,7 @@ class   MyColumn extends StatelessWidget {
           Container(
             color: Colors.red,
             padding: const EdgeInsets.all(10),
-            child:const  Text('one'style: TextStyle(center),)
+            child:const  Text('one')
           ),
           Container(
             color: Colors.red,
