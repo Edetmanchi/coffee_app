@@ -13,15 +13,27 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
-            color: Colors.grey[500],
-            child:const  Text('How i like my coffee') 
+            padding:const EdgeInsets.fromLTRB(10, 30, 30, 30),
+            color: Colors.grey[600],
+            child:const  Text('How i like my coffee')
           ),
           Container(
-            color: Colors.grey[300],
-            child: const CoffeePrefs(),
+          padding:const EdgeInsets.fromLTRB(10, 20, 30, 20),
+          color: Colors.grey[400],
+          child: const CoffeePrefs(),
+          ),
+          // ),
+          Expanded(child: 
+            Image.asset('assets/img/coffee_bg.jpg',
+            fit: BoxFit.fitWidth,
+            alignment: Alignment.bottomCenter,
+            ),
           )
+
          
         ],
       )

@@ -5,33 +5,37 @@ class CoffeePrefs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('coffee prefs'),
-        backgroundColor: Colors.grey[800],
-        centerTitle: true,
-        titleTextStyle: const TextStyle(color: Colors.white),
-      ),
-      body:const  Wrap(
-        spacing: 20, // Horizontal spacing between children
-        runSpacing: 10, // Vertical spacing if wrapped
+    return Column(
         children: [
           Row(
-            mainAxisSize: MainAxisSize.min, // Prevent Row from taking full width
-            children:[
-              Text('Strength: '),
-              Text('3'),
+            children: [
+              const Text('Strengt:',style: TextStyle(fontSize: 20),),
+              Image.asset('assets/img/coffee_bean.png',
+              width: 40,
+              color: Colors.brown[100],
+              colorBlendMode: BlendMode.multiply,             
+              ),
+              const SizedBox(width: 50,),
+              const Text('3',style: TextStyle(fontSize: 20),),
             ],
           ),
           Row(
-            mainAxisSize: MainAxisSize.min,
-            children:[
-              Text('Sugars: '),
-              Text('4'),
+            children: [
+              const Text('Sugar:',style: TextStyle(fontSize: 20),),
+              Image.asset('assets/img/sugar_cube.png',
+              width: 40,
+              color: Colors.brown[100],
+              colorBlendMode: BlendMode.multiply,),
+              const SizedBox(width: 50,),
+              const Text('3',style: TextStyle(
+                fontSize: 20
+              ),),
             ],
-          ),
+
+          )
+         
         ],
-      ),
+
     );
   }
 }
